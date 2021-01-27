@@ -95,7 +95,7 @@ export default function Index() {
           height: 100%;
         }
         .h1 {
-          font-size: 2rem;
+          font-size: 1.8rem;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -104,7 +104,7 @@ export default function Index() {
           border-bottom: 1px solid #aaa;
         }
         .date {
-          font-size: 1rem;
+          font-size: 1.1rem;
           display: flex;
           justify-content: space-between;
           align-items: center;
