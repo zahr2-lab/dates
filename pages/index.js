@@ -24,7 +24,7 @@ export default function Index() {
   }, []);
   useEffect(() => {
     setTodayData(data.filter((item) => item.day === day));
-  }, [day]);
+  }, [day, data]);
   return (
     <>
       <Head>
@@ -43,8 +43,8 @@ export default function Index() {
               {category.name === "haircut" && (
                 <div>
                   {todaydata[0] && todaydata[0].haircutdetails}:{" "}
-                  {todaydata[0] && todaydata[0].status ? "جيدة" : "سيئة"} بنسبة{" "}
-                  {todaydata[0] && todaydata[0].haircutprob}
+                  {todaydata[0] && todaydata[0].haircutstatus ? "جيدة" : "سيئة"}{" "}
+                  بنسبة {todaydata[0] && todaydata[0].haircutprob}
                   {"%"}
                 </div>
               )}
